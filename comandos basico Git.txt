@@ -1,0 +1,5 @@
+cd c:/xampp/htdocs/famework
+git status
+git add .
+git commit -m 'descripcion'
+git push

@@ -34,6 +34,7 @@ if (!isset($action)) {
 if (empty($args)) {
     $args = array(0=>NULL);
 }
+
 $path = ROOT.'controllers'.DS.$controller.'controller.php';
 $view = ROOT.'views'.DS.$controller.DS.$action.'.php';
 $header = ROOT.'views'.DS.'layouts'.DS.'default'.DS.'header.php';
@@ -50,7 +51,7 @@ if(file_exists($path)){
     include_once($footer);
   }
   else{
-    echo 'a vista para la accion $action no existe';
+    echo 'La vista para la accion $action no existe';
   }
 }
 else{
